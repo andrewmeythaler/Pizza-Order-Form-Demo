@@ -1,0 +1,152 @@
+.orderPage { /*div for the entire page*/
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: flex; /* Flex box for responsive resizing of all elements*/
+		width: 80%; /* Takes up 80% of the width of any given screen, so some background is still shown*/
+		padding: 10%;
+		border-radius: 25px;
+		flex-direction: column;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: flex-start;
+}
+.menuFull { /*div for all of the menu item selectors*/
+		flex: 1; /*sets fractional relation for the total size of the parent flex box, relative to total flex of all children*/
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: flex; /*Also flex box, for ordering of menu sub catagories*/
+		width: 100%; /*Takes up 100% of the .orderPage container div*/
+		padding: 5px 0px;
+		flex-wrap: wrap; /*Will move elements into new rows to make space*/
+		justify-content: flex-start; /*Starts placing elements at the left side*/
+		align-items: stretch; /*resizes the element to fill the row*/
+		border-radius: 20px;
+		margin: auto; /*auto center*/
+		-webkit-flex-wrap: wrap;
+		-webkit-justify-content: flex-start;
+		-webkit-align-items: stretch;
+		-webkit-border-radius: 20px;
+}
+.menu { /*div for each sub-catagorie on the menu*/
+		flex: 1 45%; /*each menu should be of equal flex value, and have a width of 45% of the parent flex box*/
+		border-radius: 15px 50px 15px 15px; /*rounded containers, with clipped upper right corner*/
+		box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.7); 
+		background: #73AD21;
+		margin: 10px;
+		max-height: 43em;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: flex; /*Also a flex box to dynamically resize child elements*/
+		flex-wrap: wrap;
+		flex-direction: column; /*Essentially turns the flex box on it's side (irritating since justify and align were not made equal!) so elements are arranged vertically*/
+}
+h1 { /*Sub menu headers*/
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: rgba(8,141,165,1);
+	text-shadow: 1px .5px 4px rgba(0,0,0, 0.6);
+	text-align: center;
+}
+h2 { /*Receipt headers*/
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: rgba(8,141,165,1);
+	text-shadow: 1px .5px 4px rgba(0,0,0, 0.6);
+	margin: auto;
+}
+p { /*Receipt headers*/
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: white;
+	margin: auto;
+}
+label { /*Ovverides the CSS on input buttons, since CSS won't let them look good no matter what. (Not that my buttons look much better)*/
+	border-radius: 30px 30px 30px 30px; /*rounded buttons*/
+	background-color: #4CAF50;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	font-size: 16px;
+	cursor: pointer;
+	margin: -15px 2px auto 2px; /*Automatically sets the upper and lower margins to make maximum use of the parent flexboxes' space.*/
+	position: relative;
+	box-shadow: 0 8px #000; /*8 pixel lower black shadow*/
+	border: none;
+	user-select: none; /*Makes the text on top of the button non-selectable/highlightable. Useful for animations and less buggy button presses*/
+}
+input {
+	visibility: hidden;
+	margin: none;
+}
+input[type="radio"]:checked + label, input[type="radio"]:active + label, input[type="checkbox"]:checked + label, input[type="checkbox"]:active + label, button:active{
+	/*applied on any button's child label (checkbox or radio) that is currently checked, or active (currently being pressed). Including active helps it feel less sudden.*/
+	background-color: #3e8e41; /*Makes it a darker shade*/
+	box-shadow: 0 4px #000; /*decreases the size of the shadow by the ammount transformed*/
+	transform: translateY(4px);/*moves the button down 4 pixels*/
+}
+.size + label{ /*Unique padding values for the labels of each kind of sub menu button, to offset the difference in button number*/
+	padding: 10px 32px;
+}
+.crust + label{
+	padding: 10px 32px;
+}
+.sauce + label{
+	padding: 10px 32px;
+}
+.cheese + label{
+	padding: 10px 32px;
+}
+.meat + label{
+	padding: 7px 32px;
+	margin: -25px 2px auto 2px;
+	position: relative;
+}
+.veggies + label{
+	padding: 7px 32px;
+	margin: -25px 2px auto 2px;
+	position: relative;
+}
+.receiptButton {
+	display: inline;
+	border-radius: 30px 30px 30px 30px; /*rounded buttons*/
+	background-color: #4CAF50;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	font-size: 16px;
+	cursor: pointer;
+	padding: 25px 100px;
+	margin: auto;
+	box-shadow: 0 8px #000;
+	user-select: none;
+}
+.receiptButton:focus {
+	outline:none !important;
+}
+.receipt {
+	width: 100%;
+}
+.receiptBox {
+		border-radius: 30px 30px 30px 30px;
+		background-color: #73AD21;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: flex; /*Also flex box, for ordering of menu sub catagories*/
+		width: 100%; /*Takes up 100% of the .orderPage container div*/
+		padding: 5px 0px;
+		flex-wrap: wrap; /*Will move elements into new rows to make space*/
+		justify-content: flex-start; /*Starts placing elements at the left side*/
+		/*align-items: stretch; /*resizes the element to fill the row*/
+		border-radius: 20px;
+		margin: auto; /*auto center*/
+		-webkit-flex-wrap: wrap;
+		-webkit-justify-content: flex-start;
+		-webkit-align-items: stretch;
+		-webkit-border-radius: 20px;
+}
+.receiptColumn { /*div for each sub-catagorie on the menu*/
+		flex: 2 30%; /*each menu should be of equal flex value, and have a width of 45% of the parent flex box*/
+		margin: 10px;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: flex; /*Also a flex box to dynamically resize child elements*/
+		flex-wrap: wrap;
+		flex-direction: column; /*Essentially turns the flex box on it's side (irritating since justify and align were not made equal!) so elements are arranged vertically*/
+}

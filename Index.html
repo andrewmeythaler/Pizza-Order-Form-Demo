@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+	<title>Andrew Meythaler</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="./css/Pizza.css">-
+	</head>
+	<body class style="overflow: visible;">
+		<div class="orderPage">
+			<div class="menuFull">
+				<div class="menu">
+					<h1>Pizza Size</h1>
+					<input class="size" type= "radio" name="Size" value="Personal Pizza" id="personal" checked>
+					<label for="personal" class="szlabel">Personal Pizza</label>
+					<br>
+					<input class="size" type= "radio" name="Size" value="Medium Pizza" id="medium">
+					<label for="medium" class="szlabel">Medium Pizza</label>
+					<br>
+					<input class="size" type= "radio" name="Size" value="Large Pizza" id="large">
+					<label for="large" class="szlabel">Large Pizza</label>
+					<br>
+					<input class="size" type= "radio" name="Size" value="Extra Large Pizza" id="xlarge">
+					<label for="xlarge" class="szlabel">Extra Large Pizza</label>
+					<br>
+				</div>
+				<div class="menu">
+					<h1>Crust</h1>
+					<input class="crust" type= "radio" name="Crust" value="Plain Crust" id="plain" checked>
+					<label for="plain" class="crlabel">Plain Crust</label>
+					<br>
+					<input class="crust" type= "radio" name="Crust" value="Garlic Butter Crust" id="garlic">
+					<label for="garlic" class="crlabel">Garlic Butter Crust</label>
+					<br>
+					<input class="crust" type= "radio" name="Crust" value="Cheese Stuffed Crust" id="cheese">
+					<label for="cheese" class="crlabel">Cheese Stuffed Crust</label>
+					<br>
+					<input class="crust" type= "radio" name="Crust" value="Spicy Crust" id="spicy">
+					<label for="spicy" class="crlabel">Spicy Crust</label>
+					<br>
+					<input class="crust" type= "radio" name="Crust" value="House Special Crust" id="house">
+					<label for="house" class="crlabel">House Special Crust</label>
+					<br>
+				</div>
+				<div class="menu">
+					<h1>Sauce</h1>
+					<input class="sauce" type= "radio" name="Sauce" value="Marinara Sauce" id="marinara" checked>
+					<label for="marinara" class="sclabel">Marinara Sauce</label>
+					<br>
+					<input class="sauce" type= "radio" name="Sauce" value="White Sauce" id="white">
+					<label for="white" class="sclabel">White Sauce</label>
+					<br>
+					<input class="sauce" type= "radio" name="Sauce" value="Barbeque Sauce" id="bbq">
+					<label for="bbq" class="sclabel">Barbeque Sauce</label>
+					<br>
+					<input class="sauce" type= "radio" name="Sauce" value="No Sauce" id="nosc">
+					<label for="nosc" class="sclabel">No Sauce</label>
+					<br>
+				</div>
+				<div class="menu">
+					<h1>Cheese</h1>
+					<input class="cheese" type= "radio" name="Cheese" value="No Cheese" id="noch">
+					<label for="noch" class="chlabel">No Cheese.</label>
+					<br>
+					<input class="cheese" type= "radio" name="Cheese" value="Regular Cheese" id="regular" checked>
+					<label for="regular" class="chlabel">Regular Cheese</label>
+					<br>
+					<input class="cheese" type= "radio" name="Cheese" value="Extra Cheese" id="extra">
+					<label for="extra" class="chlabel">Extra Cheese</label>
+					<br>
+				</div>
+				<div class="menu">
+					<h1>Meat</h1>
+					<input class="meat" type= "checkbox" name="Meat" value="Pepperoni" id="pep">
+					<label for="pep" class="mlabel">Pepperoni</label>
+					<br>
+					<input class="meat" type= "checkbox" name="Meat" value="Sausage" id="ssg">
+					<label for="ssg" class="mlabel">Sausage</label>
+					<br>
+					<input class="meat" type= "checkbox" name="Meat" value="Canadian Bacon" id="cbacon">
+					<label for="cbacon" class="mlabel">Candadian Bacon</label>
+					<br>
+					<input class="meat" type= "checkbox" name="Meat" value="Ground Beef" id="gbeef">
+					<label for="gbeef" class="mlabel">Ground Beef</label>
+					<br>
+					<input class="meat" type= "checkbox" name="Meat" value="Anchovy" id="anch">
+					<label for="anch" class="mlabel">Anchovy</label>
+					<br>
+					<input class="meat" type= "checkbox" name="Meat" value="Chicken" id="chick">
+					<label for="chick" class="mlabel">Chicken</label>
+					<br>
+				</div>
+				<div class="menu">
+					<h1>Veggies</h1>
+					<input class="veggies" type= "checkbox" name="Veggies" value="Tomatoes" id="tmto">
+					<label for="tmto" class="vlabel">Tomatoes</label>
+					<br>
+					<input class="veggies" type= "checkbox" name="Veggies" value="Onions" id="onion">
+					<label for="onion" class="vlabel">Onions</label>
+					<br>
+					<input class="veggies" type= "checkbox" name="Veggies" value="Olives" id="olv">
+					<label for="olv" class="vlabel">Olives</label>
+					<br>
+					<input class="veggies" type= "checkbox" name="Veggies" value="Green Peppers" id="gpep">
+					<label for="gpep" class="vlabel">Green Peppers</label>
+					<br>
+					<input class="veggies" type= "checkbox" name="Veggies" value="Mushrooms" id="mush">
+					<label for="mush" class="vlabel">Mushrooms</label>
+					<br>
+					<input class="veggies" type= "checkbox" name="Veggies" value="Pineapple" id="pnp">
+					<label for="pnp" class="vlabel">Pineapple</label>
+					<br>
+					<input class="veggies" type= "checkbox" name="Veggies" value="Spinach" id="spnch">
+					<label for="spnch" class="vlabel">Spinach</label>
+					<br>
+					<input class="veggies" type= "checkbox" name="Veggies" value="Jalapeno" id="jpno">
+					<label for="jpno" class="vlabel">Jalapeno</label>
+					<br>
+				</div>
+			</div>
+			<div class="buttonContainer">
+				<button class="receiptButton" id="place">Place Order</button>
+				<button class="receiptButton" id="cancel">Cancel Order</button>
+			</div>
+			<div class="receipt" id="receipt">
+				<div class="receiptBox">
+					<div class="receiptColumn" id="left">
+						<div class="itemList" id="il">
+							<h2>Item</h2>
+						</div>
+						<h2>Total:</h2>
+					</div>
+					<div class="receiptColumn" id="right">
+						<h2>Price</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script>
+			var sizesA = ["personal", "medium", "large", "xlarge"];
+			var crustA= ["plain", "garlic", "cheese", "spicy", "house"];
+			var sauceA = ["marinara", "white", "bbq", "nosc"];
+			var cheeseA = ["noch", "regular", "extra"];
+			var meatA = ["pep", "ssg", "cbacon", "gbeef", "anch", "chick"];
+			var veggieA = ["tmto", "onion", "olv", "gpep", "mush", "pnp", "spnch", "jpno"];
+		</script>
+		<script>
+			function placeOrder() {
+				for (var x = 0; x < sizesA.length; x++)
+				{
+					
+					if (document.getElementById(sizesA[x]).checked == true)
+					{
+						if (document.getElementById(sizesA[x]).value == "Personal Pizza")
+						{
+							var price = 6;
+						}
+						else if (document.getElementById(sizesA[x]).value == "Medium Pizza")
+						{
+							var price = 10;
+						}
+						else if (document.getElementById(sizesA[x]).value == "Large Pizza")
+						{
+							var price = 14;
+						}
+						else if (document.getElementById(sizesA[x]).value == "Extra Large Pizza")
+						{
+							var price = 16;
+						}
+						else
+						{
+							var price = 0;
+						}
+						var food = {name:document.getElementById(sizesA[x]).value, cost:price, type:"size"};
+						var foods = [food];
+					}
+				}
+				for (var x = 0; x < crustA.length; x++)
+				{
+					if (document.getElementById(crustA[x]).checked == true)
+					{
+						if (document.getElementById(crustA[x]).value == "Cheese Stuffed Crust")
+						{
+							price = 3;
+						}
+						else
+						{
+							price = 0;
+						}
+						food = {name:document.getElementById(crustA[x]).value, cost:price, type:"crust"};
+						foods.push(food);
+					}
+				}
+				for (var x = 0; x < sauceA.length; x++)
+				{
+					if (document.getElementById(sauceA[x]).checked == true)
+					{
+						price = 0;
+						food = {name:document.getElementById(sauceA[x]).value, cost:price, type:"sauce"};
+						foods.push(food);
+					}
+				}
+				for (var x = 0; x < cheeseA.length; x++)
+				{
+					if (document.getElementById(cheeseA[x]).checked == true)
+					{
+						if (document.getElementById(cheeseA[x]).value == "Extra Cheese")
+						{
+							price = 3;
+						}
+						else
+						{
+							price = 0;
+						}
+							food = {name:document.getElementById(cheeseA[x]).value, cost:price, type:"cheese"};
+							foods.push(food);
+					}
+				}
+				for (var x = 0; x < meatA.length; x++)
+				{
+					var meats = 0;
+					if (document.getElementById(meatA[x]).checked == true)
+					{
+						for (var y = 0; y < foods.length; y++)
+						{
+							if (foods[y].type == "meat")
+							{
+								meats++;
+								y = foods.length;
+							}
+						}
+						if (meats  == 0)
+						{
+							price = 0;
+						}
+						else
+						{
+							price = 1;
+						}
+						food = {name:document.getElementById(meatA[x]).value, cost:price, type:"meat"};
+						foods.push(food);
+					}
+				}
+				for (var x = 0; x < veggieA.length; x++)
+				{
+					var veggies = 0;
+					if (document.getElementById(veggieA[x]).checked == true)
+					{
+						for (var y = 0; y < foods.length; y++)
+						{
+							if (foods[y].type == "veggie")
+							{
+								veggies++;
+								y = foods.length;
+							}
+						}
+						if (veggies  == 0)
+						{
+							price = 0;
+						}
+						else
+						{
+							price = 1;
+						}
+						food = {name:document.getElementById(veggieA[x]).value, cost:price, type:"veggie"};
+						foods.push(food);
+					}
+				}
+				var total = 0;
+				for (var x = 0; x < foods.length; x++)
+				{
+					var para = document.createElement("p");
+					var node = document.createTextNode(foods[x].name);
+					para.appendChild(node);
+					document.getElementById("il").appendChild(para);
+					var para = document.createElement("p");
+					var node = document.createTextNode("$" + foods[x].cost);
+					para.appendChild(node);
+					document.getElementById("right").appendChild(para);
+					total = total + foods[x].cost;
+				}
+				var para = document.createElement("h2");
+				var node = document.createTextNode("$"+total);
+				para.appendChild(node);
+				document.getElementById("right").appendChild(para);
+				document.getElementById("place").disabled = true;
+				document.getElementById("cancel").disabled = false;
+			}
+			function cancelOrder()
+			{	
+				var node = document.getElementById("il");
+				console.log(node);
+				while (node.firstChild)
+				{
+					node.removeChild(node.firstChild);
+				}
+				var node = document.getElementById("right");
+				console.log(node);
+				while (node.firstChild)
+				{
+					node.removeChild(node.firstChild);
+				}
+				var para = document.createElement("h2");
+				var node = document.createTextNode("Item");
+				para.appendChild(node);
+				document.getElementById("il").appendChild(para);
+				var para = document.createElement("h2");
+				var node = document.createTextNode("Price");
+				para.appendChild(node);
+				document.getElementById("right").appendChild(para);
+				document.getElementById("place").disabled = false;
+				document.getElementById("cancel").disabled = true;
+			}
+			$(document).ready(
+				function(){
+					$("#receipt").hide(1000);
+					$("#place").click(
+						function(){
+							placeOrder();
+							$("#receipt").show(1000);
+						}
+					);
+					$("#cancel").click(
+						function(){
+							cancelOrder();
+							$("#receipt").hide(1000);
+						}
+					);
+				}
+			);
+			<!--document.getElementById("place").addEventListener("click", placeOrder());
+			<!--document.getElementById("cancel").addEventListener("click", cancelOrder());-->
+		</script>
+	</body>
+</html>
